@@ -1,5 +1,18 @@
-# hier should the class that manages the game board be written.
-#____________________________________________________________#
+"""[Tic Tac Toe Game implentation]
+
+    Structure:
+        [Main]:         	[The game is created as a loop inside the main function.
+                                inside the Main function there is an object of class
+                                in addtion to a set of seperate functions]
+        [Class]:            [The game board is created, updated, printed through this class.
+                                The class also helps by checking for the winner]
+        [Functions]:        [These are a set of sepearte functions that uses the object of
+                                the class to performe the game step for step]
+    """
+
+#!________________________________[Board Class]_____________________________________________
+
+
 class Board():
     def __init__(self):
         self.Board = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
@@ -86,8 +99,7 @@ class Board():
                 return False
 
 
-# hier schould the game loop and the helping functions be written.
-#_______________________________________________________________#
+# !_________________________________________________[Main]________________________________________
 
 
 def main():
@@ -144,8 +156,8 @@ def main():
     # print(f'the Row is {row} and the column is {column}')
 
 
-# hier should come the helping functions be written.
-#__________________________________________________#
+#!______________________________[Functions Implementation]_________________________________________
+
 
 def getPlayers():
     p1 = input("Please enter the name of the first plyer\n")
